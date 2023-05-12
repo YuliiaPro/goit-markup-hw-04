@@ -10,6 +10,8 @@
   --main-color: #ffffff;
   --primary-brand: #4d5ae5;
   --pressed-state: #404bbf;
+  --accent-color: #31d0aa;
+  --helper-text: #8e8f99;
 }
 body {
   background-color: var(--main-color);
@@ -152,6 +154,14 @@ img {
   background-color: var(--dark);
   padding-top: 188px;
   padding-bottom: 188px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url('../images/people-office.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .main-title {
   display: block;
@@ -208,6 +218,16 @@ img {
 }
 .features-item {
   flex-basis: calc((100% - 72px) / 4);
+}
+.features-icon-item {
+  display: flex;
+  background-color: var(--light);
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
 }
 .features-item:not(:last-child) {
   margin-right: 24px;
@@ -270,6 +290,46 @@ img {
 .team-item {
   background-color: var(--main-color);
 }
+.social-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+  column-gap: 24px;
+}
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--primary-brand);
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+}
+.customers-list {
+  display: flex;
+}
+.customers-item {
+  display: flex;
+  width: 168px;
+  height: 88px;
+  /* background-color: var(--main-color); */
+  border: 1px solid var(--helper-text);
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+}
+.customers-icon {
+  display: flex;
+  /* fill: var(--helper-text); */
+}
+/* .social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+} */
 .page-footer {
   background-color: var(--dark);
   padding-top: 100px;
@@ -352,4 +412,16 @@ img {
 }
 .paragraph-footer {
   width: 25%;
+}
+.container-footer {
+  display: flex;
+}
+.footer-social-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+  margin-bottom: 16px;
 }
