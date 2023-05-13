@@ -340,7 +340,6 @@ img {
   align-items: center;
   justify-content: center;
 }
-
 .customers-icon {
   display: flex;
   fill: currentColor;
@@ -348,9 +347,6 @@ img {
 .customers-link:hover,
 .customers-link:focus {
   border: 1px solid var(--pressed-state);
-}
-.customers-link:hover .customers-icon,
-.customers-link:focus .customers-icon {
   color: var(--pressed-state);
 }
 
