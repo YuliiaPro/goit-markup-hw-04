@@ -316,25 +316,28 @@ img {
   display: flex;
   width: 168px;
   height: 88px;
-  /* background-color: var(--main-color); */
+  background-color: var(--main-color);
   border: 1px solid var(--helper-text);
   border-radius: 4px;
   align-items: center;
   justify-content: center;
 }
+.customers-item:not(:last-child) {
+  margin-right: 24px;
+}
 .customers-icon {
   display: flex;
-  /* fill: var(--helper-text); */
+  fill: var(--helper-text);
 }
-/* .social-link:hover,
-.social-link:focus {
-  background-color: var(--accent-color);
-} */
-.page-footer {
-  background-color: var(--dark);
-  padding-top: 100px;
-  padding-bottom: 100px;
+.customers-item:hover,
+.customers-item:focus {
+  border: 1px solid var(--pressed-state);
 }
+.customers-item:hover .customers-icon,
+.customers-item:focus .customers-icon {
+  fill: var(--pressed-state);
+}
+
 .light-logo {
   color: var(--light);
 }
@@ -397,6 +400,11 @@ img {
 .portfolio-title-item {
   margin-bottom: 8px;
 }
+.page-footer {
+  background-color: var(--dark);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
 .logo-footer {
   display: inline-block;
   font-family: 'Raleway', sans-serif;
@@ -411,7 +419,8 @@ img {
   margin-bottom: 16px;
 }
 .paragraph-footer {
-  width: 25%;
+  width: 264px;
+  margin-right: 120px;
 }
 .container-footer {
   display: flex;
