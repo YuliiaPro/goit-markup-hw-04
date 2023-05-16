@@ -166,6 +166,7 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  margin: 0 auto;
 }
 .main-title {
   display: block;
